@@ -1,0 +1,475 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 23px;
+    background-color: rgb(189, 212, 227);
+    
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+ text-align: center;
+ font-size: 1.2rem;
+ margin-right: 4rem;
+ padding: 10px;
+}
+nav li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:  black;
+}
+/* mobile nav */
+.kibab{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.mobinav{
+    background-color: #ffffff;
+    z-index: 6;
+   transition: 1s ease;
+   display: none;
+   width: 100%;
+   
+}
+.mobinav ul{
+    width: 100%;
+ gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.landing_img{
+    background: url(../images/dark.webp);
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    transition: all 2s ease;
+    transform-origin: left;
+    animation:  from 3s forwards ease-in-out;
+}
+@keyframes from {
+    from{
+        transform: scale(.5) perspective(1000px);
+        background: linear-gradient(blue,purple);
+    }
+    to{
+          box-shadow: inset 2px 5px 7px 4px;
+        transform: scale(1) perspective(10px);
+    }
+}
+
+.landing_img div{
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px;
+    transition: 2s ease-in-out;
+    animation:  skew 2s forwards;
+}
+@keyframes skew {
+    0%{
+        background: linear-gradient(orange,purple);
+        transform: scale(.2);
+       
+    }
+   
+   100%{
+    transition: 2s ease-in-out;
+        transform:scale(1)  rotate(360deg);
+    }
+}
+.intro_container{
+
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding-top: 2rem;
+
+
+}
+.intro_container .intro_content{
+    width: 50%;
+    height: 100%;
+    line-height: 2em;
+}
+.intro_content span{
+    border-radius: 7px;
+    background-color: blue; 
+    font-size: large;
+    padding: 6px;
+    
+}
+.intro_container .intro_img{
+    width:40%;
+   
+}
+.teaching{
+margin-top: 5rem;
+background-image: linear-gradient(blue, lightblue);
+}
+
+.teaching div{
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+}
+.teaching div img{
+    width: 40%;
+    
+}
+.teaching div p{
+    width: 68%;
+    padding: 30px;
+   background-color: #eae9e9;
+   
+}
+.teaching div p span{
+    display: block;
+    font-size: 2rem;
+}
+
+.teaching div img{
+    width: 32%;
+}
+
+.impact_container{
+    
+    padding-top: 60px;
+  margin-top: 6rem;
+    
+}
+.impact{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20%  20%;
+    padding: 10px;
+   
+    column-gap: 2rem;
+    justify-content: center;
+    place-items: center;
+    margin-top: 3rem;
+    
+}
+.counter li{
+list-style: none;
+
+margin-top: 2rem;
+}
+.counter{
+    width: 60%;
+    height: 100%;
+    font-size: 1.2rem;
+   text-align: center;
+    
+}
+.counter h1{
+    font-size: 5rem;
+    border-radius: 50%;
+   font-weight: 500;
+    text-align: center;
+    height: 8rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   box-shadow: inset 2px 2px 3cqb white,inset 1px -1px 13px;
+}
+.counter h1::before{
+    width: 130%;
+    height: 130%;
+    position: absolute;
+    content: "";
+    
+   
+    border-radius: 50%;
+    
+   box-shadow: 6px 6px 10px 1px  #eae9e9,  -2px -10px 5cqb  
+   rgb(221, 219, 219),inset   4px 4px 12px 12px #fcfcfc;
+
+}
+
+
+.progress_container{
+    width: 100%;
+    display: flex;
+    padding-top:6rem;
+    padding-bottom:6rem;
+    margin-top: 3rem;
+   
+
+}
+
+.progress_container img{
+    object-fit: cover;
+    object-position: center;
+
+    width: 40%;
+    height: 100vh;
+
+}
+.progress{
+    padding:10px ;
+    padding-left: 30px;
+    margin-left: 1.3rem;
+}
+progress{
+    width: 90% ;
+  appearance: none;
+  height: 10px;
+
+}
+progress::-webkit-progress-bar{
+  background-color: #eadada;
+   border-radius: 14px;
+
+}
+progress::-webkit-progress-value{
+    background-color: rgb(105, 183, 247);
+    border-radius: 10px;
+}
+.progress_statue{
+    width: 100%;display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    position: relative;
+}
+.figure{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.our_class{
+
+    margin-top:4rem ;
+}
+.get_invole{
+width: 100%;
+display: flex;
+padding: 10px;
+gap: 2rem;
+justify-content: center;
+padding-top: 6rem;
+padding-bottom: 6rem;
+
+}
+.invole_box{
+    display: flex;
+    flex-direction: column;
+  width: 22%;
+    background-color: bisque;
+    padding: 22px;
+    justify-content: center;
+    ;
+
+    }
+    .invole_box:hover{
+      
+        background:linear-gradient(blue,lightblue,transparent);
+        animation:  shake .6s infinite ;
+        transition: all .4s ease-in;
+    }
+    @keyframes shake {
+        0%{
+            transform:translateY(0);
+        }
+        25%{
+            transform:translateY(-5px);
+        }
+        50%{
+            transform:translateX(5px);
+        }
+        
+        75%{
+            transform:translateX(-5px);
+        }
+        
+        100%{
+            transform: translateX(0)
+        }
+    }
+       
+.our_class{
+    background-color: #74747411;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
+ 
+    
+}
+ 
+ 
+.inner_class div{
+width: 47%;
+
+padding: 20px;
+border: 1px solid black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-self: center;
+
+}
+.inner_class div:nth-child(odd){
+    margin-left: 3%;
+}
+
+.inner_class img{
+   width: 100%;
+   height: 60vh;
+  
+}
+.inner_class{
+ position: relative;
+box-sizing: border-box;
+padding: 20px;
+}
+.inner_class div{
+    position: absolute;
+    background-color: #74747411;
+}
+
+.inner_class div:nth-child(1)
+{
+   
+    left: 0;
+}
+.inner_class div:nth-child(2)
+{
+    
+    left: 50%;
+  
+    
+}
+.inner_class div:nth-child(3)
+{
+  left: 0%;
+  top: 36.6rem;
+
+  
+}
+.inner_class div:nth-child(4)
+{
+   
+    top: 36.6rem;
+    left: 50%;
+}
+
+.inner_class div p{
+    padding: 10px;
+    margin-top: 1rem;
+    padding-left: 20px;
+
+}
+.inner_class div h1{
+    padding-top: 12px;
+    padding-left: 20px;
+}
+.inner_class div span{
+    padding-top: 12px;
+    padding-left: 20px;
+    font-family: 'Segoe UI';
+    
+}
+
+.inner_class div span a{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 6px;
+    color: #2600ff;
+}
+.inner_class div span a span{
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    color: #2600ff;
+}
+/* mission and vision */
+
+.mission_card_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    margin-top: 73rem;
+
+}
+.mission_card{
+    padding: 25px;
+    background-color: white;
+   width: 30%;
+   box-shadow:  6px 4px 10px 4px rgba(184, 179, 179, 0.642);
+   height: 15rem;
+}
+.mission_card span i{
+    font-size: 2rem;
+ color: red;
+}
+.news{
+    display: flex;
+    justify-content: center;
+ margin-top: 12rem; ;
+    gap: 4rem;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+.news_box{
+    width:25%;
+
+}
+.news_box:nth-child(4){
+    display: none;
+}
+.news_box:nth-child(5){
+    display: none;
+}
+.news_box h2:hover{
+    color: #2600ff;
+    transition: all .3s ease;
+}
+.news_box img{
+    width: 100%;
+}
+/* .testimony{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+} */
+
+
+footer{
+    margin-top: 20rem;
+}.news_box img{
+    height: 40vh;
+}
+small{
+    margin-left: 1rem;
+    color: rgb(62, 59, 59);
+}
+
+
+

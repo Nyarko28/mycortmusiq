@@ -1,0 +1,14 @@
+@media screen and (max-width:600px){
+    header nav{
+        display: none;
+    }
+    .kibab{
+        display: inline;
+    }
+    .mobinav{
+        transform: all 1s ease;
+        z-index: 1000;
+        position: absolute;
+    }
+    
+}

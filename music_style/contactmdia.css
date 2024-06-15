@@ -1,0 +1,23 @@
+@media screen and (max-width:600px) {
+.input_area{
+    
+  flex-direction: column;
+  height: fit-content;
+ gap: 7rem;
+    
+}
+.input_box{
+    width: 97%;
+}
+.support_team{
+width: 97%;
+height: max-content;
+
+}
+iframe{
+   margin-top: 4rem;
+}
+footer{
+    margin-top: 7rem;
+}
+}

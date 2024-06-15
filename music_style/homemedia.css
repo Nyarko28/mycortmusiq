@@ -1,0 +1,164 @@
+@media screen and (max-width:600px) {
+    .landing_img div{
+        font-size: 2rem;
+    }
+    .intro_container{
+        width: 100%;
+        flex-direction:column ;
+        height: max-content;
+        gap: 2rem;
+    }
+    .intro_img{
+        width: fit-content;
+       background-color: aqua;
+        height: 100%;
+        box-shadow:  2px 4px 9px blue;
+       
+    }
+    .intro_container .intro_content{
+        width: 100%;
+        height: fit-content;
+        
+    }
+    .teaching div{
+     flex-direction:column-reverse
+     
+
+
+    }
+    .teaching div p{
+        padding: 3px;
+        width: fit-content;
+    }
+    .teaching div img{
+        z-index: 1;
+      
+       width:100%;
+    }
+    .impact{
+        grid-template-columns:  50% 50%;
+        column-gap: 9px;
+        row-gap:2rem;
+    }
+    .progress_container{
+        flex-direction: column;
+    }
+    .progress_container img{
+        width: 100%;
+    }
+    .progress{
+        padding-left: 4px;
+    }
+    .figure{
+        left: 90%;
+    }
+    .figure:nth-child(2){
+        left: 80%;
+    }
+    .figur:nth-child(3){
+        left: 98%;
+    }
+    .get_invole{
+        display: grid;
+    grid-template-columns: 45% 45%;
+
+    }
+    .invole_box{
+        width: 100%;
+        border-radius: 9px;
+    }
+    .inner_class p{
+     display: none;
+    }
+    .inner_class img{
+        height: max-content;
+    }
+    .inner_class div h1{
+        padding-left: 2px;
+    }
+    .inner_class div:nth-child(4){
+        top: 23rem;
+    }
+    .inner_class div:nth-child(3){
+        top: 23rem;
+    }
+    .mission_card_container{
+       
+        gap: 1.3rem;
+        flex-direction: column;
+    }
+    .mission_card{
+        width: 80%;
+        height: fit-content;
+    }
+    .news{
+        width: auto;
+        gap: 2rem;
+        overflow:scroll;
+    }
+    .news_box{
+        width:fit-content;
+        background-color: rgb(233, 241, 243);
+      
+    
+    }
+    .news_box img{
+    width:max-content;
+     object-position: center;
+    }
+    .news_box:nth-child(1){
+        margin-left: 48rem;
+        
+    }
+
+    .news_box:nth-child(4){
+        display: block;
+    }
+    .news_box:nth-child(5){
+        display: block;
+    }
+
+  
+}
+@media screen  and (max-width:360px){
+    .mission_card_container{
+        flex-direction: column;
+        margin-top: 6rem;
+    }
+   
+    .mission_card{
+        width: 80%;
+    }
+    .inner_class {
+       
+        flex-direction: column-reverse;
+        height:auto;
+        background: rgb(220, 229, 245);
+        padding-left:auto;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+    .inner_class div{
+       
+        width: 100%;
+        margin-top: 2rem; 
+        position: relative;
+       
+    }
+    
+    .inner_class div:nth-child(2){
+        left:auto;
+    }
+    .inner_class div:nth-child(3){
+        left: 0;
+        top: 0;
+    }
+    .inner_class div:nth-child(4){
+        left: 0;
+       top: 0;
+    }
+    .news_box:nth-child(1){
+        margin-left: 52rem;
+        
+    }
+}

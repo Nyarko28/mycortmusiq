@@ -1,0 +1,25 @@
+@media screen and (max-width:600px){
+    .encourage{
+       background-color: rgb(239, 247, 244);
+       flex-direction: column;
+    }
+    .img_side{
+       width: 90%;
+      
+    }
+    .contentr{
+        width: 100%;
+    }
+    .mission{
+        height: fit-content;
+    }
+    .mission_card_container{
+        flex-direction: column;
+    }
+    .mission_card{
+        width: 80%;
+    }
+    .about_img span{
+        display: block;
+    }
+}
